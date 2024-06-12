@@ -45,6 +45,7 @@ export default class Portfolio extends Component {
       ]
     };
   }
+
   render() {
     const { portfolioItems } = this.state;
     return (
@@ -56,7 +57,7 @@ export default class Portfolio extends Component {
               {portfolioItems.map((item, index) => (
                 <div key={index} className="columns portfolio-item">
                   <div className="item-wrap">
-                    <a href={item.modalId} target="_blank">
+                    <a href={item.modalId} target="_blank" rel="noopener noreferrer">
                       <img src={item.imgurl} className="item-img" alt={item.name} />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
