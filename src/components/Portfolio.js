@@ -4,28 +4,28 @@ export default class Portfolio extends Component {
   render() {
     const portfolioItems = [
       {
-        name: "Project 1",
-        description: "Description of Project 1",
-        imgurl: "images/portfolio/project1.jpg",
-        modalId: "modal-01"
+        name: "Python Web Scraper",
+        description: "Web scraper built using BeautifulSoup to retrieve and compare prices from Amazon and Flipkart.",
+        imgurl: "images/portfolio/web-scraper.png",
+        modalId: "https://github.com/nymishkash/python-web-scraper"
       },
       {
-        name: "Project 2",
-        description: "Description of Project 2",
-        imgurl: "images/portfolio/project2.jpg",
-        modalId: "modal-02"
+        name: "Streambox by Nymish",
+        description: "An audio streaming web application built using HTML, CSS and Javascript.  ",
+        imgurl: "images/portfolio/streambox.jpeg",
+        modalId: "https://github.com/nymishkash/streambox-by-nymish"
       },
       {
-        name: "Project 3",
-        description: "Description of Project 3",
-        imgurl: "images/portfolio/project3.jpg",
+        name: "Razorpay Payment Gateway Integration",
+        description: "A payment gateway integration using Razorpay API.",
+        imgurl: "images/portfolio/payment.jpeg",
         modalId: "modal-03"
       },
       {
-        name: "Project 4",
-        description: "Description of Project 4",
-        imgurl: "images/portfolio/project4.jpg",
-        modalId: "modal-04"
+        name: "Car Rental System",
+        description: "A car rental system built using SpringBoot, MySQL and Java backend.",
+        imgurl: "images/portfolio/car-rental.jpeg",
+        modalId: "https://github.com/nymishkash/car-rental-system"
       }
     ];
 
@@ -38,7 +38,7 @@ export default class Portfolio extends Component {
               {portfolioItems.map((item, index) => (
                 <div key={index} className="columns portfolio-item">
                   <div className="item-wrap">
-                    <a href={`#${item.modalId}`}>
+                    <a href={`${item.modalId}`}>
                       <img src={item.imgurl} className="item-img" alt={item.name} />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
